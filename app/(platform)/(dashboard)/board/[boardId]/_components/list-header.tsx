@@ -7,6 +7,8 @@ import { useAction } from '@/hooks/use-action'
 import { updateList } from '@/action/update-list'
 import { FormInput } from '@/components/form/form-input'
 
+import ListOptions from './list-options'
+
 interface ListHeaderProps {
   data: List
 }
@@ -89,6 +91,7 @@ const ListHeader = ({ data }: ListHeaderProps) => {
           {title}
         </div>
       )}
+      <ListOptions data={data} onAddCard={() => {}} />
     </div>
   )
 }
