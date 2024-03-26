@@ -13,7 +13,7 @@ export const ModalProvider = () => {
   }, [])
 
   if (!isMounted) {
-    return
+    return null
   }
 
   return <CardModal />

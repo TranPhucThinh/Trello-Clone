@@ -16,7 +16,7 @@ type HeaderProps = {
   data: CardWithList
 }
 
-const Header = ({ data }: HeaderProps) => {
+export const Header = ({ data }: HeaderProps) => {
   const queryClient = useQueryClient()
   const params = useParams()
 
@@ -85,5 +85,3 @@ Header.Skeleton = function HeaderSkeleton() {
     </div>
   )
 }
-
-export default Header
